@@ -27,6 +27,7 @@ public class Bullet : MonoBehaviour
             Debug.Log("I hit the standing target.");
             //add code to add hit points to your scoreboard
             //gray out the standing target
+            Destroy(other.gameObject);
             other.gameObject.SetActive(false);    
         }
 
@@ -35,6 +36,7 @@ public class Bullet : MonoBehaviour
             Debug.Log("I hit the floating target.");
             //add code to add hit points to your scoreboard
             Destroy(this.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }

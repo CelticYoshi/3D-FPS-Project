@@ -26,9 +26,9 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log("I hit the standing target.");
             //add code to add hit points to your scoreboard
-            //gray out the standing target
+            //gray out the standing target   
             Destroy(other.gameObject);
-            other.gameObject.SetActive(false);    
+            other.gameObject.SetActive(false);
         }
 
         if(other.gameObject.CompareTag("TargetFloating"))

@@ -7,47 +7,52 @@ using System;
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 180f;
-    public bool timerIsRunning = false;
     public TextMeshProUGUI timerText;
-    
-    private Vector3 _startingPosition;
+    private bool _isTimerRunning = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        //timerIsRunning = true;
+        StartGameTimer();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timerIsRunning)
+        if(_isTimerRunning)
         {
-        if(timeRemaining > 0)
-        {
-            timeRemaining -= Time.deltaTime;
-            DisplayTime(timeRemaining);
+            if(timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                // display the timer amount
+                DisplayTime(timeRemaining);
+            }
+            else 
+            {
+                timeRemaining = 0;
+                _isTimerRunning = false;
+            }
         }
-        else
-        {
-            timeRemaining = 0;
-            timerIsRunning = false;
-        }
-    }
+    }     
 
-    void DisplayTime(float timeToDisplay)
+    public void StartGameTimer()
     {
-        timeToDisplay += 1;
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);    
+        _isTimerRunning = true;
     }
 
-    void StartGameTimer()
+    public void EndGameTimer()
     {
-        timerIsRunning = true;
+        _isTimerRunning = false;
     }
-}
+
+    private void DisplayTime(float timetoDisplay)
+    {
+        timetoDisplay += 1;
+        
+        float minutes = Mathf.FloorToInt(timetoDisplay / 60);
+        float seconds = Mathf.FloorToInt(timetoDisplay % 60);
+
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
 }
 

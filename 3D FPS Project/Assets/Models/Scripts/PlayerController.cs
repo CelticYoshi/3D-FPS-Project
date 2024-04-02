@@ -18,11 +18,13 @@ public class PlayerController : MonoBehaviour
     private bool _canPlayerJump;
     private Vector3 _moveInput;
     private CharacterController _characterController;
+    private Ammo _ammo;
 
     // Start is called before the first frame update
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
+        _ammo = GetComponent<Ammo>();
     }
 
     // Update is called once per frame
@@ -89,6 +91,9 @@ public class PlayerController : MonoBehaviour
             
             //Create the bullet
             Instantiate(bullet, firePoint.position, firePoint.rotation);
+
+            //Remove ammo
+            _ammo.RemoveAmmo();
         }
     }
 }

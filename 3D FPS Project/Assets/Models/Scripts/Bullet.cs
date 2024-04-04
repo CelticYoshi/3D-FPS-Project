@@ -33,6 +33,7 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log("I hit the standing target.");
             //add code to add hit points to your scoreboard
+            GameObject.Find("Game Manager").GetComponent<GameManager>().UpdateTargetAmount();
             //gray out the standing target   
             Destroy(this.gameObject);
             other.gameObject.SetActive(false);
@@ -42,6 +43,7 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log("I hit the floating target.");
             //add code to add hit points to your scoreboard
+            GameObject.Find("Game Manager").GetComponent<GameManager>().UpdateTargetAmount();
             Destroy(this.gameObject);
             Destroy(other.gameObject);
         }

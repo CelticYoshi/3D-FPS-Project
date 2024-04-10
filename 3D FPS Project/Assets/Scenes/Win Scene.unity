@@ -793,7 +793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 155876e873163405a97f5a11837ebcb2, type: 3}
+  m_Texture: {fileID: 2800000, guid: 9914b36d6fc914415b501fb0c2baa12b, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 1932358003}
   - component: {fileID: 1932358002}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

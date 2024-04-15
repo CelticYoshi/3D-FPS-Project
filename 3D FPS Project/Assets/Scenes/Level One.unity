@@ -5585,6 +5585,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetText: {fileID: 1931382288}
+  winScene: 1
+  loseScene: 2
 --- !u!4 &569109096
 Transform:
   m_ObjectHideFlags: 0

@@ -1248,6 +1248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Session
       objectReference: {fileID: 0}
+    - target: {fileID: 4906260649274841061, guid: d0ed83e34172e406fb0c75754af3b2d3, type: 3}
+      propertyPath: levelOne
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4908055591689012225, guid: d0ed83e34172e406fb0c75754af3b2d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

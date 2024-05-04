@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18559,6 +18559,26 @@ PrefabInstance:
       propertyPath: ammoAmountText
       value: 
       objectReference: {fileID: 881256485}
+    - target: {fileID: 4018360252703326168, guid: 4734eeaf4e74a4b428999d829f998bc0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018360252703326168, guid: 4734eeaf4e74a4b428999d829f998bc0, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018360252703326168, guid: 4734eeaf4e74a4b428999d829f998bc0, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018360252703326168, guid: 4734eeaf4e74a4b428999d829f998bc0, type: 3}
+      propertyPath: m_SlopeLimit
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018360252703326168, guid: 4734eeaf4e74a4b428999d829f998bc0, type: 3}
+      propertyPath: m_StepOffset
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5771257888782340300, guid: 4734eeaf4e74a4b428999d829f998bc0, type: 3}
       propertyPath: m_Name
       value: Player
